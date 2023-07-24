@@ -4,7 +4,8 @@
 * fakebts3g [pdf](https://github.com/SitrakaResearchAndPOC/GSM5_UMTS_IMSICATCHER_HALFMITM/blob/main/fakebts3g.pdf) [link](https://fakebts.com/category/3g/)
 * fakebts3g_v2 [pdf](https://github.com/SitrakaResearchAndPOC/GSM5_UMTS_IMSICATCHER_HALFMITM/blob/main/imsicatching-attacks-on-3g-networks-part-1.pdf)  [link](https://fakebts.com/2017/10/imsicatching-attacks-on-3g-networks-part-1/)
 * [videos1](https://www.youtube.com/watch?v=KM_ErNK3x04&t=1912s) [videos2](https://www.youtube.com/watch?v=32DD5DSAnc8&t=86s)
-
+* Protocol 3G in 28C3 [videos3](https://www.youtube.com/watch?v=4wF47aLagoU&pp=ygUTaGFyYWxkIHdlbHRlICsgdW10cw%3D%3D)
+  
 ## SIMPLE IMSI CATCHER
 ### Attack explanation
 * Just catch IMSI
@@ -26,8 +27,7 @@
 ## UMTS DENIED OF SERVICE
 ### Attack explanation
 * Sending Location Update Reject for making Denied of service having code number 3 "Illegal MS"
-* For bidding down attack (bda2g) uses having code number 14 "Service option temporarily out of order"
- ### Protocol Flow 
+### Protocol Flow 
  <p align="center">
   <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/umts_flow_imsi_cathing2.jpg">
 </p>
@@ -35,6 +35,18 @@
  <p align="center">
   <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/umts_flow_imsi_cathing3.jpg">
 </p>
+
+
+
+## IMSICATCHING ATTACKS ON 3G NETWORKS (Bidding Down Attack)
+* For bidding down attack (bda2g) uses Location Update Reject having code number 14 "Service option temporarily out of order"
+In June of this year I announced the participation of CellAnalysis in the project of Sysmocom [Accelerate3g](https://www.sysmocom.de/news/contribute-to-3g5-acceleration/index.html) [videos1](https://www.youtube.com/watch?v=vq4zXOk3Qpg&pp=ygUTaGFyYWxkIHdlbHRlICsgdW10cw%3D%3D)  [videos2](https://www.youtube.com/watch?v=ol27YxWOcuY&pp=ygUTaGFyYWxkIHdlbHRlICsgdW10cw%3D%3D) program to detect the 3G IMSICatching attacks. This article describes the first steps studying the 3G attacks within the Osmocom infrastructure and the basic principles of detection that are being implemented in CellAnalysis 3G.
+
+### Lab infrastructure
+ <p align="center">
+  <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/diagrama2.png">
+</p>
+
 
 ## UMTS REDIRECTOR
 ### Attack explanation
