@@ -40,6 +40,7 @@
 
 ## IMSICATCHING ATTACKS ON 3G NETWORKS (Bidding Down Attack)
 * For bidding down attack (bda2g) uses Location Update Reject having code number 14 "Service option temporarily out of order"
+### Descriptions
 In June of this year I announced the participation of CellAnalysis in the project of Sysmocom [Accelerate3g](https://www.sysmocom.de/news/contribute-to-3g5-acceleration/index.html) [videos1](https://www.youtube.com/watch?v=vq4zXOk3Qpg&pp=ygUTaGFyYWxkIHdlbHRlICsgdW10cw%3D%3D)  [videos2](https://www.youtube.com/watch?v=ol27YxWOcuY&pp=ygUTaGFyYWxkIHdlbHRlICsgdW10cw%3D%3D) program to detect the 3G IMSICatching attacks. This article describes the first steps studying the 3G attacks within the Osmocom infrastructure and the basic principles of detection that are being implemented in CellAnalysis 3G.
 
 ### Lab infrastructure
@@ -47,10 +48,33 @@ In June of this year I announced the participation of CellAnalysis in the projec
   <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/diagrama2.png">
 </p>
 
+Following the steps in the [Getting_Started_with_3G](https://osmocom.org/projects/cellular-infrastructure/wiki/Getting_Started_with_3G) tutorial,  we setup the 3G network but we will modify the MSC node source code. We don’t need to add any subscriber in the HLR/AuC database, since we are not going to deliver a 3G service to our victims. The negotiation procedure of the mobile to register in our 3G network will always be rejected, in order to be able to downgrade to 2G, in the same way as we saw in 4G ([4G/LTE IMSI Catchers](https://fakebts.com/%202017/04)). In this first article we will use the “Location Update Reject” attack, with the different causes of rejection forcing the mobile to register in the 2G network (the downgrade attack).
+
+### Implementation
+3G
+<br/>
+femtocell nano3G (Sysmocom)
+<br/>
+Osmocom 3G network,  running on Ubuntu 14 (intel core i5 4200U 1,6GHz, 8Gb RAM)
+<br/>
+<br/>
+
+2G
+<br/>
+BladeRF x40
+<br/>
+YateBTS, 2G network running on Ubuntu 16 (intel atom 1.6GHz, 8GB RAM)
+<br/>
+<br/>
+Once configured the 3G network following the Getting Started tutorial, it’s better to verify that the cell 3G is transmitting correctly in the UARFCN 9800 (default channel):
+<p align="center">
+  <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/RFAnalyzer.png">
+</p>
+
 
 ## UMTS REDIRECTOR
 ### Attack explanation
-* Make a denied of service with redirectioncarrier info attack
+* Make a denied of service with redirectioncarrier info attack [code]()
  ### Protocol Flow 
  <p align="center">
   <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/umts_flow_imsi_cathing4.jpg">
