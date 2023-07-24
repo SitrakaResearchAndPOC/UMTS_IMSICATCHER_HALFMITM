@@ -12,6 +12,7 @@
 *  BIDDING DOWN ATTACK
 *  UMTS REDIRECTOR
 *  CRYPTO HACKING USING RAINBOW TABLE
+*  FEMTOCELL_HACKING
 *  UMTS CBC(CELL BROADCAST CENTER)
 ## 1. SIMPLE IMSI CATCHER
 ### Attack explanation
@@ -155,8 +156,11 @@ osmomsc-vty-reference.pdf: “1.14.9 periodic location update <6-1530>”
 ## 5. CRYPTO HACKING USING RAINBOW TABLE
 * Create a rainbow table for cracking crypto openbts-umts [code](https://github.com/SitrakaResearchAndPOC/fork_a53_rainbow_wip)
 
-
-## 6. UMTS CBC(CELL BROADCAST CENTER)
+## 6. FEMTO_CELL HACKING
+* Rooted the femtocell for having a mitm
+* Could hack SS7
+  
+## 7. UMTS CBC(CELL BROADCAST CENTER)
 * Sending a fake panic attack (fake notification, emergency sms)
 
 ## Remark
