@@ -33,7 +33,7 @@
 </p>
  ### Reject Code list
  <p align="center">
-  <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/umts_flow_imsi_cathing3.jpg">
+  <img width="600" height="250" src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/umts_flow_imsi_cathing3.jpg">
 </p>
 
 
