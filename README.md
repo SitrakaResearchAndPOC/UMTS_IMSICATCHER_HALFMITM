@@ -16,7 +16,12 @@
 * launch NodeB_Collector as same as MCC, MNC, RAU3 different of RAU2 and UARFCN2
 * launch NodeB_Jammer as same as options1 or options2
 * Collect IMSI
-  
+
+ ### Protocol Flow 
+ <p align="center">
+  <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/umts_flow_imsi_cathing1.jpg">
+</p>
+
 
 ## UMTS DENIED OF SERVICE
 ### Attack explanation
