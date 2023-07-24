@@ -5,6 +5,7 @@
 * fakebts3g_v2 [pdf](https://github.com/SitrakaResearchAndPOC/GSM5_UMTS_IMSICATCHER_HALFMITM/blob/main/imsicatching-attacks-on-3g-networks-part-1.pdf)  [link](https://fakebts.com/2017/10/imsicatching-attacks-on-3g-networks-part-1/)
 * [videos1](https://www.youtube.com/watch?v=KM_ErNK3x04&t=1912s) [videos2](https://www.youtube.com/watch?v=32DD5DSAnc8&t=86s)
 * Protocol 3G in 28C3 [videos3](https://www.youtube.com/watch?v=4wF47aLagoU&pp=ygUTaGFyYWxkIHdlbHRlICsgdW10cw%3D%3D)
+* Location Update Reject or LUR [pdf](https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/cause-codes-umts-lte-3gpp.pdf) [link](http://prerak.com/tag/cause-codes-umts-lte-3gpp/)
 ## LIST OF ATTACK
 *  SIMPLE IMSI CATCHER
 *  UMTS DENIED OF SERVICE
@@ -14,6 +15,7 @@
 *  CRYPTO HACKING USING RAINBOW TABLE
 *  FEMTOCELL_HACKING
 *  UMTS CBC(CELL BROADCAST CENTER)
+
 ## 1. SIMPLE IMSI CATCHER
 ### Attack explanation
 * Just catch IMSI
@@ -22,7 +24,7 @@
 * Options 2 : launch NodeB_Jammer using Modmobmap or CleverJam with same frequency as UARCN1 and bandwith 5MHz 
 * Finding all parameter2 (using android apps) MCC, MNC, RAU2 and UARFCN2 as same as operator like NodeB_Collector
 * Stop NodeB_Jammer
-* launch NodeB_Collector as same as MCC, MNC, RAU3 different of RAU2 and UARFCN2
+* launch NodeB_Collector as same as MCC, MNC, RAU3 different of RAU2 and UARFCN2 and location update reject with code 15 (No Suitable cells in area)
 * launch NodeB_Jammer as same as options1 or options2
 * Collect IMSI
 
