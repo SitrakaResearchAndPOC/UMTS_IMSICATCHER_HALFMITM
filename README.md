@@ -27,18 +27,41 @@
 ### Attack explanation
 * Sending Location Update Reject for making Denied of service having code number 3 "Illegal MS"
 * For bidding down attack (bda2g) uses having code number 14 "Service option temporarily out of order"
+ ### Protocol Flow 
  <p align="center">
   <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/umts_flow_imsi_cathing2.jpg">
 </p>
+ ### Reject Code list
  <p align="center">
   <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/umts_flow_imsi_cathing3.jpg">
 </p>
 
-
 ## UMTS REDIRECTOR
 ### Attack explanation
 * Make a denied of service with redirectioncarrier info attack
+ ### Protocol Flow 
+ <p align="center">
+  <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/umts_flow_imsi_cathing4.jpg">
+</p>
 
+ ### Attack scenario global
+ <p align="center">
+  <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/umts_flow_imsi_cathing5.jpg">
+</p>
+
+ ### Attack scenario 1 : the mobile connect to the 3G
+ <p align="center">
+  <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/umts_flow_imsi_cathing6.jpg">
+</p>
+ <p align="center">
+  <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/umts_flow_imsi_cathing7.jpg">
+</p>
+ <p align="center">
+  <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/umts_flow_imsi_cathing8.jpg">
+</p>
+
+
+ 
 
 ## CRYPTO HACKING USING RAINBOW TABLE
 * Create a rainbow table for cracking crypto openbts-umts
@@ -46,3 +69,7 @@
 
 ## UMTS CBC(CELL BROADCAST CENTER)
 * Sending a fake panic attack (fake notification, emergency sms)
+
+## Remark
+* Choose the best parameter of [UHD](https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/UHD_openbts_umts.jpg) for openbts_umts
+* 
