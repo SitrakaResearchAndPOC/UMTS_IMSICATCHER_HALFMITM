@@ -27,7 +27,12 @@
 ### Attack explanation
 * Sending Location Update Reject for making Denied of service having code number 3 "Illegal MS"
 * For bidding down attack (bda2g) uses having code number 14 "Service option temporarily out of order"
-
+ <p align="center">
+  <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/umts_flow_imsi_cathing2.jpg">
+</p>
+ <p align="center">
+  <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/umts_flow_imsi_cathing3.jpg">
+</p>
 
 
 ## UMTS REDIRECTOR
