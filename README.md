@@ -71,6 +71,43 @@ Once configured the 3G network following the Getting Started tutorial, it’s be
   <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/RFAnalyzer.png">
 </p>
 
+To implement our custom reject cause, we must modify the source code of the MSC to overwrite the registration reject cause in the “Location Update Request” response. Usually the reject cause should be “(2) IMSI unknown in HLR” since we have not provisioned any subscriber in our HLR or “(3) Illegal MS” if we only add the victim’s IMSI in the HLR Sqlite db but not the auth values. It’s needed to manipulate the source code of the MSC so that it always returns the cause value of our interest, according to whether we want to do a D.o.S or a 2G downgrade attack:
+<br/>
+* Disable the USIM entirely until power-off or USIM removal.
+* Attach requests disable the USIM for packets domain until power-off or USIM removal.
+* Periodic Location Update requests will trigger the UE to attempt GERAN instead.
+Once we choose and implement our attack, switch-on the victim mobile (S2) and activate Tobias Engel xgoldmon to detect the attack. Check the following image, how the response to the registration request (the Location Update Reject) is correctly sent to our victim with our reject cause choosen (this example is #14, “Service option temporarily out of order“):
+<p align="center">
+  <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/LocUpRjt14_xgoldmon.png">
+</p>
+
+After the LocUp Reject, the victim mobile connects to the 2G network (YateBTS). See bellow how after the RRC message “Location Update Reject“, the mobile starts to use LAPDm and begins the authentication in the 2G network:
+
+<p align="center">
+  <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/Downgrade_2G_xgoldmon.png">
+</p>
+
+But, before switching to 2G network, the registration procedure has asked the victim mobile to identify, by requesting the IMSI. This is the 3G IMSICatching attack, see the “Identity Response” message (IMSI has been removed in the image):
+
+<p align="center">
+  <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/Downgrade_2G_xgoldmon.png">
+</p>
+
+#### Detection
+CellAnalysis 3G uses active monitoring solutions (in this article xgoldmon), instead of the passive ones as SDR boards used in the 2G fake stations detection, to monitor 3G attacks.
+<br/>
+Advantages using active monitoring;
+<br/>
+ciphering algorithms (UEA) usage
+<br/>
+authentication parameters and rates
+<br/>
+But on the other hand, there is a big disadvantage:
+<br/>
+<br/>
+one SIM card and device per operator in order to scan all the 3G fake stations
+<br/>
+Of course a regulation compliance check is being carried out to determine wether the 3G radio parameters are used accordingly to each country frequency distribution regulation, as in the 2G detection.
 
 ## UMTS REDIRECTOR
 ### Attack explanation
@@ -99,7 +136,6 @@ Once configured the 3G network following the Getting Started tutorial, it’s be
  <p align="center">
   <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/umts_flow_imsi_cathing8.jpg">
 </p>
- 
 
 ## CRYPTO HACKING USING RAINBOW TABLE
 * Create a rainbow table for cracking crypto openbts-umts [code](https://github.com/SitrakaResearchAndPOC/fork_a53_rainbow_wip)
