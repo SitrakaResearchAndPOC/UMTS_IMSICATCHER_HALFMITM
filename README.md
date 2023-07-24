@@ -49,22 +49,24 @@
   <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/umts_flow_imsi_cathing5.jpg">
 </p>
 
- ### Attack scenario 1 : the mobile connect to the 3G
+ ### Attack scenario 1 : the mobile connects to the 3G
  <p align="center">
   <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/umts_flow_imsi_cathing6.jpg">
 </p>
+
+### Attack scenario 2 : the fake bts sends redirected carrier info
  <p align="center">
   <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/umts_flow_imsi_cathing7.jpg">
 </p>
+
+### Attack scenario 2 : the victim is at the fake 2G network
  <p align="center">
   <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/umts_flow_imsi_cathing8.jpg">
 </p>
-
-
  
 
 ## CRYPTO HACKING USING RAINBOW TABLE
-* Create a rainbow table for cracking crypto openbts-umts
+* Create a rainbow table for cracking crypto openbts-umts [code](https://github.com/SitrakaResearchAndPOC/fork_a53_rainbow_wip)
 
 
 ## UMTS CBC(CELL BROADCAST CENTER)
@@ -72,4 +74,5 @@
 
 ## Remark
 * Choose the best parameter of [UHD](https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/UHD_openbts_umts.jpg) for openbts_umts
-* 
+* No opensource for umts client , so no full mitm opensource
+* Femtocell3G for osmocom named osmo-iuh (more expensive)
