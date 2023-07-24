@@ -5,8 +5,15 @@
 * fakebts3g_v2 [pdf](https://github.com/SitrakaResearchAndPOC/GSM5_UMTS_IMSICATCHER_HALFMITM/blob/main/imsicatching-attacks-on-3g-networks-part-1.pdf)  [link](https://fakebts.com/2017/10/imsicatching-attacks-on-3g-networks-part-1/)
 * [videos1](https://www.youtube.com/watch?v=KM_ErNK3x04&t=1912s) [videos2](https://www.youtube.com/watch?v=32DD5DSAnc8&t=86s)
 * Protocol 3G in 28C3 [videos3](https://www.youtube.com/watch?v=4wF47aLagoU&pp=ygUTaGFyYWxkIHdlbHRlICsgdW10cw%3D%3D)
-  
-## SIMPLE IMSI CATCHER
+## LIST OF ATTACK
+*  SIMPLE IMSI CATCHER
+*  UMTS DENIED OF SERVICE
+*  JAMMING
+*  BIDDING DOWN ATTACK
+*  UMTS REDIRECTOR
+*  CRYPTO HACKING USING RAINBOW TABLE
+*  UMTS CBC(CELL BROADCAST CENTER)
+## 1. SIMPLE IMSI CATCHER
 ### Attack explanation
 * Just catch IMSI
 * Finding all parameter1 (using android apps) MCC, MNC, RAU1 and UARFCN1 as same as operator like NodeB_Jammer
@@ -24,7 +31,7 @@
 </p>
 
 
-## UMTS DENIED OF SERVICE
+## 2. UMTS DENIED OF SERVICE
 ### Attack explanation
 * Sending Location Update Reject for making Denied of service having code number 3 "Illegal MS"
 ### Protocol Flow 
@@ -38,7 +45,7 @@
 
 
 
-## IMSICATCHING ATTACKS ON 3G NETWORKS (Bidding Down Attack)
+## 3. IMSICATCHING ATTACKS ON 3G NETWORKS (Bidding Down Attack)
 * For bidding down attack (bda2g) uses Location Update Reject having code number 14 "Service option temporarily out of order"
 ### Descriptions
 In June of this year I announced the participation of CellAnalysis in the project of Sysmocom [Accelerate3g](https://www.sysmocom.de/news/contribute-to-3g5-acceleration/index.html) [videos1](https://www.youtube.com/watch?v=vq4zXOk3Qpg&pp=ygUTaGFyYWxkIHdlbHRlICsgdW10cw%3D%3D)  [videos2](https://www.youtube.com/watch?v=ol27YxWOcuY&pp=ygUTaGFyYWxkIHdlbHRlICsgdW10cw%3D%3D) program to detect the 3G IMSICatching attacks. This article describes the first steps studying the 3G attacks within the Osmocom infrastructure and the basic principles of detection that are being implemented in CellAnalysis 3G.
@@ -117,9 +124,9 @@ osmobsc-vty-reference.pdf: “1.15.45 periodic location update <6-1530>”
 <br/>
 osmomsc-vty-reference.pdf: “1.14.9 periodic location update <6-1530>”
 
-## UMTS REDIRECTOR
+## 4. UMTS REDIRECTOR
 ### Attack explanation
-* Make a denied of service with redirectioncarrier info attack [code]()
+* Make a denied of service with redirectioncarrier info attack [code](https://github.com/SitrakaResearchAndPOC/umts_redirection)
  ### Protocol Flow 
  <p align="center">
   <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/umts_flow_imsi_cathing4.jpg">
@@ -145,11 +152,11 @@ osmomsc-vty-reference.pdf: “1.14.9 periodic location update <6-1530>”
   <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/umts_flow_imsi_cathing8.jpg">
 </p>
 
-## CRYPTO HACKING USING RAINBOW TABLE
+## 5. CRYPTO HACKING USING RAINBOW TABLE
 * Create a rainbow table for cracking crypto openbts-umts [code](https://github.com/SitrakaResearchAndPOC/fork_a53_rainbow_wip)
 
 
-## UMTS CBC(CELL BROADCAST CENTER)
+## 6. UMTS CBC(CELL BROADCAST CENTER)
 * Sending a fake panic attack (fake notification, emergency sms)
 
 ## Remark
