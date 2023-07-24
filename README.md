@@ -109,6 +109,14 @@ one SIM card and device per operator in order to scan all the 3G fake stations
 <br/>
 Of course a regulation compliance check is being carried out to determine wether the 3G radio parameters are used accordingly to each country frequency distribution regulation, as in the 2G detection.
 
+
+### Important Comments
+Yes, there is a periodic location update timer in both 2G (osmo-bsc) and 3G (osmo-msc):
+<br/>
+osmobsc-vty-reference.pdf: “1.15.45 periodic location update <6-1530>”
+<br/>
+osmomsc-vty-reference.pdf: “1.14.9 periodic location update <6-1530>”
+
 ## UMTS REDIRECTOR
 ### Attack explanation
 * Make a denied of service with redirectioncarrier info attack [code]()
