@@ -1,4 +1,4 @@
-# GSM5_UMTS_IMSICATCHER_HALFMITM
+# UMTS_IMSICATCHER_HALFMITM
 ## Reading articles
 * [layakk](https://www.layakk.com/en/research/) [rootedcon2016](https://github.com/SitrakaResearchAndPOC/GSM5_UMTS_IMSICATCHER_HALFMITM/blob/main/Hackron2016-Layakk-3G_Attacks.pdf) [rootedcon2016_v2](https://github.com/SitrakaResearchAndPOC/GSM5_UMTS_IMSICATCHER_HALFMITM/blob/main/Layakk-RC16-FINALv2%20(2).pdf)
 * fakebts3g [pdf](https://github.com/SitrakaResearchAndPOC/GSM5_UMTS_IMSICATCHER_HALFMITM/blob/main/fakebts3g.pdf) [link](https://fakebts.com/category/3g/)
@@ -6,6 +6,18 @@
 * [videos1](https://www.youtube.com/watch?v=KM_ErNK3x04&t=1912s) [videos2](https://www.youtube.com/watch?v=32DD5DSAnc8&t=86s)
 * Protocol 3G in 28C3 [videos3](https://berlin-ak.ftp.media.ccc.de/congress/2011/webm/28c3-4663-en-cellular_protocol_stacks_for_internet.webm) [videos4](https://www.youtube.com/watch?v=4wF47aLagoU&pp=ygUTaGFyYWxkIHdlbHRlICsgdW10cw%3D%3D)
 * Location Update Reject or LUR [pdf](https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/cause-codes-umts-lte-3gpp.pdf) [link](http://prerak.com/tag/cause-codes-umts-lte-3gpp/)
+
+## New AKA security (Mutual authentication)
+* [link1](https://www.3glteinfo.com/lte-security-architecture/) [link2](https://www.tech-invite.com/3m33/toc/tinv-3gpp-33-102_d.html)
+<p align="center">
+  <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/UMTS-authentication-and-key-agreement.png">
+</p>
+
+<p align="center">
+  <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/UMTS-AKA-Authentication-Protocol.png">
+</p>
+
+
 ## LIST OF ATTACK
 *  SIMPLE IMSI CATCHER
 *  UMTS DENIED OF SERVICE
