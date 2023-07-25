@@ -9,10 +9,11 @@
 
 ## New AKA security (Mutual authentication)
 * [link1](https://www.3glteinfo.com/lte-security-architecture/) [link2](https://www.tech-invite.com/3m33/toc/tinv-3gpp-33-102_d.html)
+* Simpilied AKA
 <p align="center">
   <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/UMTS-authentication-and-key-agreement.png">
 </p>
-
+* Detailed AKA
 <p align="center">
   <img src="https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/UMTS-AKA-Authentication-Protocol.png">
 </p>
