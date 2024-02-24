@@ -137,7 +137,7 @@ Of course a regulation compliance check is being carried out to determine wether
 
 
 ### Important Comments
-Yes, there is a periodic location update timer in both 2G (osmo-bsc) and 3G (osmo-msc):
+Yes, there is a periodic location update timer in both 2G (osmo-bsc) and 3G (osmo-msc) T3212 with openbts-umts:
 <br/>
 osmobsc-vty-reference.pdf: “1.15.45 periodic location update <6-1530>”
 <br/>
