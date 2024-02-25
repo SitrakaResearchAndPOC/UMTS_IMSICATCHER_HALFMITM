@@ -1,9 +1,26 @@
 # UMTS_IMSICATCHER_HALFMITM
-## Routing Area Update Reject or RAUReject / service attach reject code 
+# Routing Area Update Reject or RAUReject / service attach reject code 
 Routing area update reject is 10 (IMPLICITLY DETACHED) </br>
 Service attach reject for redirection : 2 (IMSI Unkown in HLR) or 17 (Network failure or user busy)  </br>
 Service attach reject for Dos : 3,7,8,9,14 code  </br>
 Service attach reject without denied of service : 15 (No suitable cells in this area)  </br> </br>
+
+
+# Schematics flow
+* Classic flow
+<img src="https://github.com/SitrakaResearchAndPOC/openlte_redirection/blob/main/schematic_classicflow.png" width="500px" align="center">
+
+* IMSI-Catcher for non programmer without modification but with denied of service
+<img src="https://github.com/SitrakaResearchAndPOC/openlte_redirection/blob/main/schematic_imsicatcherdos.png" width="500x" align="center">
+
+* IMSI-Catcher for programmer with modification but without denied of service  
+<img src="https://github.com/SitrakaResearchAndPOC/openlte_redirection/blob/main/schematic_imsicatcher.png" width="500px" align="center">
+
+* Redirect 1 : IMSI-Catcher for programmer with modification but with denied of service and redirection without getting IMSI over 3G
+<img src="https://github.com/SitrakaResearchAndPOC/openlte_redirection/blob/main/schematic_imsicatcherdosredirection_v1.png" width="500px" align="center">
+
+* Redirect 2 : IMSI-Catcher for programmer with modification but with denied of service and redirection and getting IMSI over 3G
+<img src="https://github.com/SitrakaResearchAndPOC/openlte_redirection/blob/main/schematic_imsicatcherdosredirection_v2.png" width="500px" align="center">
 
 
 ## Learning UMTS Protocol Stack
