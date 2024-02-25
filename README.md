@@ -1,4 +1,11 @@
 # UMTS_IMSICATCHER_HALFMITM
+## Routing Area Update Reject or RAUReject / service attach reject code 
+Routing area update reject is 10 (IMPLICITLY DETACHED)
+Service attach reject for redirection : 2 (IMSI Unkown in HLR) or 17 (Network failure or user busy)
+Service attach reject for Dos : 3,7,8,9,14 code
+Service attach reject without denied of service : 15 (No suitable cells in this area)
+
+
 ## Learning UMTS Protocol Stack
 [video1](https://www.youtube.com/watch?v=4wF47aLagoU&pp=ygUhMmcgM2cgcHJvdG9jb2wgc3RhY2sgaGFyYWxkIHdlbHRl)
 [video2](https://www.youtube.com/watch?v=9pMpxDuSjSw&pp=ygUhMmcgM2cgcHJvdG9jb2wgc3RhY2sgaGFyYWxkIHdlbHRl)
