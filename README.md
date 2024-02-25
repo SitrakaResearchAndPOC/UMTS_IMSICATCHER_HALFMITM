@@ -17,7 +17,7 @@ Service attach reject without denied of service : 15 (No suitable cells in this 
 <img src="https://github.com/SitrakaResearchAndPOC/umts_redirection/blob/main/schematic_imsicatcher.png" width="500px" align="center">
 
 * Redirect 1 : IMSI-Catcher for programmer with modification but with denied of service and redirection without getting IMSI over 3G
-<img src="https://github.com/SitrakaResearchAndPOC/umts_redirection/blob/main/schematic_imsicatcherdosredirection_v1.png" width="500px" align="center">
+<img src="https://github.com/SitrakaResearchAndPOC/umts_redirection/blob/main/schematic_imsicatcherdosredirection_v1.png.png" width="500px" align="center">
 
 * Redirect 2 : IMSI-Catcher for programmer with modification but with denied of service and redirection and getting IMSI over 3G
 <img src="https://github.com/SitrakaResearchAndPOC/umts_redirection/blob/main/schematic_imsicatcherdosredirection_v2.png" width="500px" align="center">
