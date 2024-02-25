@@ -7,8 +7,9 @@ Service attach reject without denied of service : 15 (No suitable cells in this 
 
 
 ## Learning UMTS Protocol Stack
-[video1](https://www.youtube.com/watch?v=4wF47aLagoU&pp=ygUhMmcgM2cgcHJvdG9jb2wgc3RhY2sgaGFyYWxkIHdlbHRl)
-[video2](https://www.youtube.com/watch?v=9pMpxDuSjSw&pp=ygUhMmcgM2cgcHJvdG9jb2wgc3RhY2sgaGFyYWxkIHdlbHRl)
+[pptx](https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/2G-3G-ProtocolStack.pptx)
+[video1](https://www.youtube.com/watch?v=4wF47aLagoU&pp=ygUhMmcgM2cgcHJvdG9jb2wgc3RhY2sgaGFyYWxkIHdlbHRl) </br>
+[video2](https://www.youtube.com/watch?v=9pMpxDuSjSw&pp=ygUhMmcgM2cgcHJvdG9jb2wgc3RhY2sgaGFyYWxkIHdlbHRl) </br>
 
 ## Reading articles
 * [layakk](https://www.layakk.com/en/research/) [rootedcon2016](https://github.com/SitrakaResearchAndPOC/GSM5_UMTS_IMSICATCHER_HALFMITM/blob/main/Hackron2016-Layakk-3G_Attacks.pdf) [rootedcon2016_v2](https://github.com/SitrakaResearchAndPOC/GSM5_UMTS_IMSICATCHER_HALFMITM/blob/main/Layakk-RC16-FINALv2%20(2).pdf)
