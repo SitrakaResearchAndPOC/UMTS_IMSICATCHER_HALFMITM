@@ -1,4 +1,8 @@
 # UMTS_IMSICATCHER_HALFMITM
+## Learning UMTS Protocol Stack
+[video1](https://www.youtube.com/watch?v=4wF47aLagoU&pp=ygUhMmcgM2cgcHJvdG9jb2wgc3RhY2sgaGFyYWxkIHdlbHRl)
+[video2](https://www.youtube.com/watch?v=9pMpxDuSjSw&pp=ygUhMmcgM2cgcHJvdG9jb2wgc3RhY2sgaGFyYWxkIHdlbHRl)
+
 ## Reading articles
 * [layakk](https://www.layakk.com/en/research/) [rootedcon2016](https://github.com/SitrakaResearchAndPOC/GSM5_UMTS_IMSICATCHER_HALFMITM/blob/main/Hackron2016-Layakk-3G_Attacks.pdf) [rootedcon2016_v2](https://github.com/SitrakaResearchAndPOC/GSM5_UMTS_IMSICATCHER_HALFMITM/blob/main/Layakk-RC16-FINALv2%20(2).pdf)
 * fakebts3g [pdf](https://github.com/SitrakaResearchAndPOC/GSM5_UMTS_IMSICATCHER_HALFMITM/blob/main/fakebts3g.pdf) [link](https://fakebts.com/category/3g/)
