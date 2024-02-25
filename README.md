@@ -197,3 +197,4 @@ osmomsc-vty-reference.pdf: “1.14.9 periodic location update <6-1530>”
 * Choose the best parameter of [UHD](https://github.com/SitrakaResearchAndPOC/UMTS_IMSICATCHER_HALFMITM/blob/main/UHD_openbts_umts.jpg) for openbts_umts
 * No opensource for umts client , so no full mitm opensource
 * Femtocell3G for osmocom named osmo-iuh (more expensive)
+* [course](https://www-igm.univ-mlv.fr/~dr/XPOSE2006/eric_meurisse/umts.php)
